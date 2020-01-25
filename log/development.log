@@ -1,0 +1,1941 @@
+Started GET "/" for 127.0.0.1 at 2020-01-19 16:01:30 +0900
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.4ms | Allocations: 410)
+Completed 200 OK in 22ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 2395)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 16:01:36 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.6ms | Allocations: 179)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 798)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 16:01:37 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 322)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 16:01:53 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 8)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 321)
+
+
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for 127.0.0.1 at 2020-01-19 16:17:14 +0900
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 204)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/yuki/Desktop/Plograming/oMoide/public/packs
+[Webpacker] Hash: 53154d7baad00c6a1252
+Version: webpack 4.41.5
+Time: 1715ms
+Built at: 2020-01-19 16:17:18
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0b67a3cc2fcde6055024.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0b67a3cc2fcde6055024.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0b67a3cc2fcde6055024.js js/application-0b67a3cc2fcde6055024.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3680ms (Views: 3674.6ms | ActiveRecord: 0.0ms | Allocations: 19172)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosteds (20200119073047)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "userId" varchar, "content" varchar, "place" varchar, "datetime" datetime, "image" blob, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119073047"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20200119073400)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "userId" varchar, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119073400"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-19 07:54:14.491622"], ["updated_at", "2020-01-19 07:54:14.491622"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddPostedIdToPosted (20200119075649)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "posteds" ADD "postedId" int[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119075649"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovePostedIdFromPosted (20200119081257)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovePostedIdFromPosted (20200119081257)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovePostedIdFromPosted (20200119081257)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aposteds" ("id","userId","content","place","datetime","image","created_at","updated_at","postedId")
+                     SELECT "id","userId","content","place","datetime","image","created_at","updated_at","postedId" FROM "posteds"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "posteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "posteds" ("id","userId","content","place","datetime","image","created_at","updated_at","postedId")
+                     SELECT "id","userId","content","place","datetime","image","created_at","updated_at","postedId" FROM "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposteds"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119081257"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveCreatedAtFromPosted (20200119082227)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aposteds" ("id","userId","content","place","datetime","image","created_at","updated_at","postedId")
+                     SELECT "id","userId","content","place","datetime","image","created_at","updated_at","postedId" FROM "posteds"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "posteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "updated_at" datetime(6) NOT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posteds" ("id","userId","content","place","datetime","image","updated_at","postedId")
+                     SELECT "id","userId","content","place","datetime","image","updated_at","postedId" FROM "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposteds"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119082227"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveUpdatedAtFromPosted (20200119082327)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "updated_at" datetime(6) NOT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aposteds" ("id","userId","content","place","datetime","image","updated_at","postedId")
+                     SELECT "id","userId","content","place","datetime","image","updated_at","postedId" FROM "posteds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "posteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posteds" ("id","userId","content","place","datetime","image","postedId")
+                     SELECT "id","userId","content","place","datetime","image","postedId" FROM "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposteds"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119082327"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemovePostedidFromPosted (20200119083005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL, "postedId" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aposteds" ("id","userId","content","place","datetime","image","postedId")
+                     SELECT "id","userId","content","place","datetime","image","postedId" FROM "posteds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "posteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "posteds" ("id","userId","content","place","datetime","image")
+                     SELECT "id","userId","content","place","datetime","image" FROM "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119083005"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveUseridFromPosted (20200119083313)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposteds" ("id" integer NOT NULL PRIMARY KEY, "userId" varchar DEFAULT NULL, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aposteds" ("id","userId","content","place","datetime","image")
+                     SELECT "id","userId","content","place","datetime","image" FROM "posteds"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "posteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posteds" ("id" integer NOT NULL PRIMARY KEY, "content" varchar DEFAULT NULL, "place" varchar DEFAULT NULL, "datetime" datetime DEFAULT NULL, "image" blob DEFAULT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posteds" ("id","content","place","datetime","image")
+                     SELECT "id","content","place","datetime","image" FROM "aposteds"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposteds"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119083313"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNameToPosted (20200119083526)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "posteds" ADD "name" varchar[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200119083526"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-01-19 17:55:09 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:12
+  Rendered top/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4192)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 21.4ms | ActiveRecord: 0.6ms | Allocations: 9221)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:02:10 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 6232)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 7421)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:02:38 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1083)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2257)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+  </head>
+
+  <body>
+    <div>
+        <h1>
+          Top ページ
+        </h1>
+        <% end %>
+        <%= button_to "投稿" action:"redirect_post" %>;
+        <% @posts.each do |post| %>
+          <ul>
+            <li>ユーザー名:<%= post.name %></li>
+            <li>内容:<%= post.content %></li>
+          </ul>
+    </div>
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>App</title>
+5:      </head>
+6:    
+7:      <body>
+8:        <div>
+9:            <h1>
+10:              Top ページ
+11:            </h1>
+12:            <% end %>
+13:            <%= button_to "投稿" action:"redirect_post" %>;
+14:            <% @posts.each do |post| %>
+15:              <ul>
+16:                <li>ユーザー名:<%= post.name %></li>
+17:                <li>内容:<%= post.content %></li>
+18:              </ul>
+19:        </div>
+20:      </body>
+21:    </html>
+  
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+app/views/top/index.html.erb:13: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:03:11 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1590)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", action:"redirect_post" %>;
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:03:11 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1561)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1997)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", action:"redirect_post" %>;
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:04:17 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1578)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2760)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {action:"redirect_post"}, {method: get} %>;
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:04:18 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1562)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1998)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {action:"redirect_post"}, {method: get} %>;
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:05:03 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1577)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2749)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {action:'redirect_post'}, {method: get} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:05:54 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1580)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2752)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {controller: 'top_controller', action:'redirect_post'}, {method: get} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:05:54 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1563)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1999)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {controller: 'top_controller', action:'redirect_post'}, {method: get} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:20:22 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1519)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {controller: 'top_controller', action:'redirect_post'}, {method: get} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:20:24 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1565)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2001)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {controller: 'top_controller', action:'redirect_post'}, {method: get} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:20:51 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1578)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2750)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <%= button_to "投稿", {controller: 'top_controller', action:'redirect_post'} %>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:22:27 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1567)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2739)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         　　<button onclick="location.href='./test.html'">遷移</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:22:57 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1562)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2734)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         　　<button>遷移</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:23:08 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1562)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2734)
+
+
+  
+ActionView::Template::Error (undefined method `safe_append=' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         　<button>遷移</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+    16:             <li>ユーザー名:<%= post.name %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:23:46 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1556)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:           Top ページ
+    11:         </h1>
+    12:         <% end %>
+    13:         <% @posts.each do |post| %>
+    14:           <ul>
+    15:             <li>ユーザー名:<%= post.name %></li>
+    16:             <li>内容:<%= post.content %></li>
+  
+app/views/top/index.html.erb:13:in `compile'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:24:13 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:12
+  Rendered top/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 8425)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:24:31 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:13
+  Rendered top/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 5474)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:24:40 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:13
+  Rendered top/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 751)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5466)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:24:49 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:13
+  Rendered top/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5481)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:26:02 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1448)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2615)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"post_form", :controller=>"top"}):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'top', action: 'post_form'}, {method: :get} %>
+    13:         <button>aaaaa</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+  
+app/views/top/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:26:35 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1198)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2100)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"post_form", :controller=>"top"}):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'top', action: 'post_form'}, {method: :get} %>
+    13:         <button>aaaaa</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+  
+app/views/top/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:39:23 +0900
+  
+NameError (undefined local variable or method `only' for #<ActionDispatch::Routing::Mapper:0x00007fb612749d78>):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:40:09 +0900
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:51:20 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1851)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 4085)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"posts"}):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'posts', action: 'index'}, {method: :get} %>
+    13:         <button>aaaaa</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+  
+app/views/top/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:51:47 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 992)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1458)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"posts"}):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'posts', action: 'index'}, {method: :get} %>
+    13:         <button>aaaaa</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+  
+app/views/top/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:54:21 +0900
+  
+SyntaxError (/Users/yuki/Desktop/Plograming/oMoide/config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'):
+  
+config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'
+config/routes.rb:4: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2020-01-19 18:55:57 +0900
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:01:56 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1899)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 4133)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"posts"}):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'posts', action: 'index'}, {method: :get} %>
+    13:         <button>aaaaa</button>
+    14:         <% @posts.each do |post| %>
+    15:           <ul>
+  
+app/views/top/index.html.erb:12
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/yuki/.rbenv/versions/2.7.0/bin/rake:23)
+Started PUT "/__web_console/repl_sessions/75062f0f8c43b74ec0ebb7fa5b4d7078" for 127.0.0.1 at 2020-01-19 19:08:08 +0900
+Started PUT "/__web_console/repl_sessions/75062f0f8c43b74ec0ebb7fa5b4d7078" for 127.0.0.1 at 2020-01-19 19:08:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:09:54 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (Duration: 17.2ms | Allocations: 3051)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 9.7ms | Allocations: 1060)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 33.3ms | Allocations: 6570)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 7811)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:12:28 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3506)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:13:10 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3473)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:13:16 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (Duration: 6.8ms | Allocations: 2891)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.0ms | Allocations: 682)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 17.9ms | Allocations: 5935)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 7092)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:15:24 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3497)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:17:27 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3472)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:17:50 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:17:51 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 5.6ms | Allocations: 3551)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 120)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 7.9ms | Allocations: 6226)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 6600)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:18:56 +0900
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3472)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:19:17 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2512)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:19:19 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 5.7ms | Allocations: 3681)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 119)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6422)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6795)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:19:26 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2487)
+
+
+  
+NameError (uninitialized constant PostsHelper
+Did you mean?  PostHelper):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:19:29 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [28 times] (Duration: 5.5ms | Allocations: 3681)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.4ms | Allocations: 119)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6422)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6795)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:20:34 +0900
+  
+SyntaxError (/Users/yuki/Desktop/Plograming/oMoide/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  resources :'posts' only[:index, :new]
+                     ^~~~
+/Users/yuki/Desktop/Plograming/oMoide/config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:4: syntax error, unexpected `end', expecting end-of-input
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:20:54 +0900
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:21:01 +0900
+  
+SyntaxError (/Users/yuki/Desktop/Plograming/oMoide/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  resources :'posts' only:[:index, :new]
+                     ^~~~
+):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  
+SyntaxError (/Users/yuki/Desktop/Plograming/oMoide/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  resources :'posts' only:[:index, :new]
+                     ^~~~
+):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:21:54 +0900
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:26:14 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (Duration: 6.4ms | Allocations: 3181)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.6ms | Allocations: 892)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 14.5ms | Allocations: 6724)
+Completed 200 OK in 23ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 8675)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:26:34 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:14
+  Rendered top/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 1.1ms | Allocations: 23031)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-01-19 19:26:37 +0900
+  
+ActionController::RoutingError (uninitialized constant PostsController
+Did you mean?  PostController
+               TopController):
+  
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.1.1) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.1) lib/rack/etag.rb:27:in `call'
+rack (2.1.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.1) lib/rack/head.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.1) lib/rack/session/abstract/id.rb:277:in `context'
+rack (2.1.1) lib/rack/session/abstract/id.rb:271:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-01-19 19:26:55 +0900
+  
+ActionController::RoutingError (uninitialized constant PostsController
+Did you mean?  PostController
+               TopController):
+  
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2.1) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.1) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.1.1) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.1) lib/rack/etag.rb:27:in `call'
+rack (2.1.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.1) lib/rack/head.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.1) lib/rack/session/abstract/id.rb:277:in `context'
+rack (2.1.1) lib/rack/session/abstract/id.rb:271:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:30:32 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:13
+  Rendered top/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 4391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.7ms | Allocations: 9456)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:30:34 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1540)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2555)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:31:01 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1371)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2224)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:31:04 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1370)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1811)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:31:41 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1370)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1811)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:31:44 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/top/index.html.erb:13
+  Rendered top/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4208)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.9ms | Allocations: 8527)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:31:45 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1369)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1802)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:32:28 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4871)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:32:45 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1532)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2686)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:32:50 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1370)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1794)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:33:40 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5077)
+
+
+Started POST "/post" for 127.0.0.1 at 2020-01-19 19:33:42 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/post"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:34:18 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 218.8ms | Allocations: 137349)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 0.3ms | Allocations: 138532)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `get' for #<#<Class:0x00007fd65fac8db0>:0x00007fd65fac2870>
+Did you mean?  gets
+               gem):
+     9:         <h1>
+    10:           Top ページ
+    11:         </h1>
+    12:         <%= button_to "ボタン", {controller: 'post', action: 'index'}, {method: get} %>
+    13:     </div>
+    14:   </body>
+    15: </html>
+  
+app/views/top/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:34:38 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 231)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5021)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:34:40 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1532)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2518)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:36:58 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4684)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:36:59 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1369)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1801)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:46:32 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1532)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2699)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:46:34 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 193.5ms | Allocations: 141380)
+Completed 500 Internal Server Error in 196ms (ActiveRecord: 1.0ms | Allocations: 142384)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:46:57 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (Duration: 6.5ms | Allocations: 3149)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.3ms | Allocations: 682)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 11.5ms | Allocations: 6351)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7495)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:47:10 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 194.7ms | Allocations: 138108)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 0.3ms | Allocations: 139285)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:47:12 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 169.9ms | Allocations: 137976)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.3ms | Allocations: 138416)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:47:32 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 167.5ms | Allocations: 138112)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.2ms | Allocations: 139289)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:47:34 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 170.9ms | Allocations: 137977)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.2ms | Allocations: 138417)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:48:15 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 176.3ms | Allocations: 137986)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.3ms | Allocations: 138431)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:53:26 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 165.5ms | Allocations: 138119)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 0.2ms | Allocations: 139296)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:53:28 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 162.5ms | Allocations: 137975)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.2ms | Allocations: 138416)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:53:41 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 171.6ms | Allocations: 138116)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.2ms | Allocations: 139293)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:53:42 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Posted Load (0.0ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered top/index.html.erb within layouts/application (Duration: 165.8ms | Allocations: 137975)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 0.3ms | Allocations: 138415)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:54:41 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 158.5ms | Allocations: 125600)
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms | Allocations: 126190)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:54:42 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 152.9ms | Allocations: 125369)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 125800)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:54:54 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 152.3ms | Allocations: 125358)
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms | Allocations: 125792)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:54:55 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 152.7ms | Allocations: 125357)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 125788)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:55:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 171.5ms | Allocations: 124225)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms | Allocations: 126136)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:55:41 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.0ms | Allocations: 7230)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:56:08 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 190.9ms | Allocations: 125500)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 0.0ms | Allocations: 126660)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:56:09 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 152.7ms | Allocations: 125350)
+Completed 500 Internal Server Error in 154ms (ActiveRecord: 0.0ms | Allocations: 125776)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:57:40 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 241)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5028)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 19:57:48 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5004)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 19:57:49 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  Rendered post/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1463)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2434)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     9:         <h1>
+    10:           投稿一覧ページ
+    11:         </h1>
+    12:         <% @posts.each do |post| %>
+    13:           <ul>
+    14:             <li>ユーザー名:<%= post.name %></li>
+    15:             <li>内容:<%= post.content %></li>
+  
+app/views/post/index.html.erb:12
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 19:58:51 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (Duration: 4.9ms | Allocations: 3177)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.3ms | Allocations: 887)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 10.7ms | Allocations: 6594)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 7830)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:05:27 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 493)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 5257)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:05:28 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3977)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:05:29 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.7ms | Allocations: 9067)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:06:25 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 360)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5148)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:06:27 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 5201)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:09:44 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 639)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 5363)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:09:46 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3962)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.6ms | Allocations: 8711)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:10:01 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 4458)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:10:04 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 594)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 4473)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:10:06 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 588)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 4453)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:10:08 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 4444)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 20:14:26 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (Duration: 5.4ms | Allocations: 3150)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.5ms | Allocations: 682)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 10.4ms | Allocations: 6352)
+Completed 200 OK in 19ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8991)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-01-19 20:14:29 +0900
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [22 times] (Duration: 5.3ms | Allocations: 2916)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/actionpack-6.0.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered /Users/yuki/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 7.9ms | Allocations: 5183)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5555)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:17:02 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1019)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2202)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+  </head>
+
+  <body>
+    <div>
+        <h1>
+          Top ページ
+        </h1>
+        <!-- <%= button_to "投稿一覧", {controller: 'post', action: 'index'}, {method: :get} %>
+        <%= button_to "投稿画面", {controller: 'post', action: 'new'}, {method: :get} %> -->
+        <%= link_to '投稿一覧'', [:index] %>
+      </div>
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>App</title>
+5:      </head>
+6:    
+7:      <body>
+8:        <div>
+9:            <h1>
+10:              Top ページ
+11:            </h1>
+12:            <!-- <%= button_to "投稿一覧", {controller: 'post', action: 'index'}, {method: :get} %>
+13:            <%= button_to "投稿画面", {controller: 'post', action: 'new'}, {method: :get} %> -->
+14:            <%= link_to '投稿一覧'', [:index] %>
+15:          </div>
+16:      </body>
+17:    </html>
+  
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/top/index.html.erb:15: syntax error, unexpected '<', expecting ')'
+app/views/top/index.html.erb:16: unknown regexp options - bdy
+app/views/top/index.html.erb:17: syntax error, unexpected '<'
+app/views/top/index.html.erb:19: unterminated regexp meets end of file
+app/views/top/index.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:17:15 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 103.2ms | Allocations: 64298)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms | Allocations: 65471)
+
+
+  
+ActionView::Template::Error (undefined method `index_path' for #<#<Class:0x00007f84dab35658>:0x00007f84dab2f0c8>
+Did you mean?  video_path):
+    11:         </h1>
+    12:         <!-- <%= button_to "投稿一覧", {controller: 'post', action: 'index'}, {method: :get} %>
+    13:         <%= button_to "投稿画面", {controller: 'post', action: 'new'}, {method: :get} %> -->
+    14:         <%= link_to '投稿一覧', [:index] %>
+    15:       </div>
+    16:   </body>
+    17: </html>
+  
+app/views/top/index.html.erb:14
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:17:33 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 430)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 5218)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:17:35 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4001)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 8707)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:18:03 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5511)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:18:04 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4920)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:18:05 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4175)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:18:08 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.2ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 4459)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:18:21 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 86.3ms | Allocations: 63829)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms | Allocations: 65002)
+
+
+  
+ActionView::Template::Error (undefined method `post_new_path' for #<#<Class:0x00007f84da97dc70>:0x00007f84da987ba8>
+Did you mean?  post_index_path):
+    12:         <!-- <%= button_to "投稿一覧", {controller: 'post', action: 'index'}, {method: :get} %>
+    13:         <%= button_to "投稿画面", {controller: 'post', action: 'new'}, {method: :get} %> -->
+    14:         <%= link_to '投稿一覧', [:post_index] %>
+    15:         <%= link_to '投稿画面', [:post_new] %>
+    16:       </div>
+    17:   </body>
+    18: </html>
+  
+app/views/top/index.html.erb:15
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:18:51 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 499)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5290)
+
+
+Started GET "/post/new" for 127.0.0.1 at 2020-01-19 20:18:52 +0900
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 4484)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-19 20:19:23 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5012)
+
+
+Started GET "/post/new" for 127.0.0.1 at 2020-01-19 20:19:24 +0900
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 89)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4494)
+
+
+Started GET "/post" for 127.0.0.1 at 2020-01-19 20:19:26 +0900
+Processing by PostController#index as HTML
+  Rendering post/index.html.erb within layouts/application
+  [1m[36mPosted Load (0.1ms)[0m  [1m[34mSELECT "posteds".* FROM "posteds"[0m
+  ↳ app/views/post/index.html.erb:12
+  Rendered post/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 4746)
+
+
+Started GET "/post/new" for 127.0.0.1 at 2020-01-19 20:19:37 +0900
+Processing by PostController#new as HTML
+  Rendering post/new.html.erb within layouts/application
+  Rendered post/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3854)
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+  </head>
+
+  <body>
+    <div>
+        <h1>
+          投稿一覧ページ
+        </h1>
+        <% @posts.each do |post| %>
+          <ul>
+            <li>ユーザー名:<%= post.name %></li>
+            <li>内容:<%= post.content %></li>
+          </ul>
+        <% end %>
+    </div>
+  </body>
+</html>
