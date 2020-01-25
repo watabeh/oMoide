@@ -1,5 +1,5 @@
 dbは、postgres。詳細は./config/database.yml参照  
-use: rails  
+username: rails  
 password: password  
 
 ### dbを作成  
