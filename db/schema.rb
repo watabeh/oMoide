@@ -12,12 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2020_01_19_083526) do
 
-  create_table "posteds", force: :cascade do |t|
+  create_table "posted", force: :cascade do |t|
+    t.string "name"
     t.string "content"
     t.string "place"
     t.datetime "datetime"
     t.binary "image"
-    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
