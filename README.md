@@ -1,24 +1,18 @@
-# README
+dbは、postgres。詳細は./config/database.yml参照  
+userbane: rails  
+password: password  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### dbを作成  
+```  
+rails db:schema:load
+```  
 
-Things you may want to cover:
+### dbへ初期データ投入  
+```  
+rails db:seed
+```  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Railsアプリ立ち上げ  
+```  
+rails s
+```  
