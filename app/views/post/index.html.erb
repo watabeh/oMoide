@@ -6,13 +6,17 @@
 
   <body>
     <div>
-        <h1>
-          投稿一覧ページ
-        </h1>
+        <div class="d-flex align-items-center">
+          <h1>投稿一覧ページ</h1>
+          <div class="ml-auto posts_button">
+          <a class="btn btn-outline-info" href="/">HOMEへもどる</a>
+          </div>
+      </div>
         <% @posts.each do |post| %>
           <ul>
             <li>ユーザー名:<%= post.name %></li>
             <li>内容:<%= post.content %></li>
+            <li>日時:<%= post.datetime.strftime("%y-%m-%d %I:%M ") %></li>
           </ul>
         <% end %>
     </div>

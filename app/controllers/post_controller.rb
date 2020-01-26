@@ -1,6 +1,6 @@
 class PostController < ApplicationController
   def index
-    @posts = Posted.all
+    @posts = Posted.all.order(datetime: "DESC")
   end
 
   def new
