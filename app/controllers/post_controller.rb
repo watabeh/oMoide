@@ -8,13 +8,18 @@ class PostController < ApplicationController
   end
 
   def create
-    post = Posted.new(post_params)
-    Posted.create(
-      name: post.name,
-      place: post.place,
-      content: post.content,
+    @post = Posted.create(
+      name: post_params[:name],
+      place: post_params[:place],
+      content: post_params[:content],
       datetime: DateTime.now
     )
+
+    if @post.save
+      redirect_to("/post")
+    else
+      # インスタンス作成できなかった場合のエラー処理
+    end
   end
 
   private
