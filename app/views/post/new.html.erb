@@ -6,9 +6,41 @@
 
   <body>
     <div>
-        <h1>
-          投稿画面
-        </h1>
+      <div class="d-flex align-items-center">
+        <h1>投稿画面</h1>
+        <div class="ml-auto posts_button">
+        <a class="btn btn-outline-info" href="/post">投稿一覧</a>
+        </div>
+    </div>
+    <%= form_for @post, :url => {:action => :create} do |f| %>
+        <div class="form-group">
+            <%= f.label :name, '投稿者名' %>
+            <%= f.text_field :name, class: 'form-control' %>
+            <small id="poster-tip" class="form-text text-muted">
+                あなたの名前を入力してください。
+            </small>
+        </div>
+        <div class="form-group">
+            <%= f.label :content, '場所' %>
+            <div>
+              <%= f.select :place, [["室蘭","室蘭"],["宮古","宮古"]] %>
+            </div>
+            <small id=content-tip" class="form-text text-muted">
+                どこの思い出か選択してください。
+            </small>
+        </div>
+        <div class="form-group">
+            <%= f.label :content, '投稿内容' %>
+            <%= f.text_area :content, class: 'form-control', rows:10 %>
+            <small id=content-tip" class="form-text text-muted">
+                投稿内容を入力してください。
+            </small>
+        </div>
+        <%= f.submit '投稿', class: 'btn btn-info btn-block' %>
+        <small id="submit-tip" class="form-text text-muted">
+            投稿する前に投稿内容を見直してください!
+        </small>
+    <% end %>
     </div>
   </body>
 </html>
