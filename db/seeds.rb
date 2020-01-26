@@ -11,6 +11,6 @@ Posted.create(
   name: 'test',
   content: 'テスト投稿です。',
   place: '室蘭',
-  datetime: '20200101 01:01:01',
+  datetime: '2020-01-25 07:38:23.753137',
   image: NIL
 )
