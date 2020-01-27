@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_01_19_083526) do
 
-  create_table "posted", force: :cascade do |t|
+  create_table "posteds", force: :cascade do |t|
     t.string "name"
     t.string "content"
     t.string "place"
