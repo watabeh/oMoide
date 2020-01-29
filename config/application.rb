@@ -18,6 +18,8 @@ module OMoide
 
     # Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
     # と言われるので、その対策
-    config.web_console.whitelisted_ips = '10.0.2.2'
+    unless Rails.env.production?
+      config.web_console.whitelisted_ips = '10.0.2.2'
+    end
   end
 end
