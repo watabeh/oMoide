@@ -1,0 +1,24 @@
+    <div>
+        <div class="d-flex align-items-center">
+          <h1>投稿一覧ページ（室蘭）</h1>
+          <div class="ml-auto posts_button">
+          <a class="btn btn-outline-info" href="/">HOMEへもどる</a>
+          </div>
+      </div>
+        <% @posts.each do |post| %>
+          <div class="post">
+            <div class="post-content">
+	    <ul>
+              <li class="name"><%= post.name %></li>
+              <li class="date"><%= post.datetime.strftime("%Y-%m-%d %I:%M ") %></li>
+	      <li class="content"><%= post.content %></li>
+            </ul>
+	  </div>
+	<!--
+	    <div style="text-align:right;display:inline-block;background-color:glay;width:100px; height:100px;" alt="みぎ">
+		<img src="assets/test.gif" alt="" width="100" height="100">
+	    </div>
+	-->
+          </div>
+        <% end %>
+    </div>

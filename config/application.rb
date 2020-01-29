@@ -15,5 +15,9 @@ module OMoide
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+    # と言われるので、その対策
+    config.web_console.whitelisted_ips = '10.0.2.2'
   end
 end

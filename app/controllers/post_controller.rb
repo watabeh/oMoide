@@ -7,6 +7,14 @@ class PostController < ApplicationController
     @post = Posted.new
   end
 
+  def muroran
+    @posts = Posted.where(place: "室蘭")
+  end
+
+  def miyako
+    @posts = Posted.where(place: "宮古")
+  end
+
   def create
     @post = Posted.create(
       name: post_params[:name],
