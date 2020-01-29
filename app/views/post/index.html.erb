@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>App</title>
-  </head>
-
-  <body>
     <div>
         <div class="d-flex align-items-center">
           <h1>投稿一覧ページ</h1>
@@ -13,12 +6,19 @@
           </div>
       </div>
         <% @posts.each do |post| %>
-          <ul>
-            <li>ユーザー名:<%= post.name %></li>
-            <li>内容:<%= post.content %></li>
-            <li>日時:<%= post.datetime.strftime("%y-%m-%d %I:%M ") %></li>
-          </ul>
+          <div class="post">
+            <div class="post-content">
+	    <ul>
+              <li class="name"><%= post.name %></li>
+              <li class="date"><%= post.datetime.strftime("%Y-%m-%d %I:%M ") %></li>
+	      <li class="content"><%= post.content %></li>
+            </ul>
+	  </div>
+	<!--
+	    <div style="text-align:right;display:inline-block;background-color:glay;width:100px; height:100px;" alt="みぎ">
+		<img src="assets/test.gif" alt="" width="100" height="100">
+	    </div>
+	-->
+          </div>
         <% end %>
     </div>
-  </body>
-</html>

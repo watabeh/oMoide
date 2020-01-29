@@ -1,0 +1,41 @@
+body {
+    font-size:1.6rem;
+}
+.post {
+    margin:30px auto;
+    text-align:center;
+    overflow:hidden;
+    width:90%;
+    max-width:1000px;
+    background:LemonChiffon;
+    border-radius:5px;
+    box-shadow:0 2px 5px #cccccc;
+}
+.post-content {
+    display:inline-block;
+    width:100%;
+    float:left;
+}
+ul {
+    width:100%;
+    padding:10px 30px;
+}
+li {
+    display:block;
+}
+.name {
+    float:left;
+    width:70%;
+    text-align:left;
+}
+.date {
+    width:auto;
+    overflow:hidden;
+    text-align:right;
+}
+.content {
+    padding-top:10px;
+    text-align:left;
+    overflow:hidden;
+    width:100%;
+}

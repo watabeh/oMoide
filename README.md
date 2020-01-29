@@ -16,3 +16,12 @@ rails db:seed
 ```  
 rails s
 ```  
+
+### heroku への push
+
+```
+  heroku git:remote -a omoide-falk
+  git push heroku master
+  heroku run:detached rake db:schema:load
+  heroku run:detached rake db:seed
+```
